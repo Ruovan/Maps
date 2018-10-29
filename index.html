@@ -8,21 +8,25 @@
 		<title>校园地图</title>
 	</head>
 	<body>
-		<div id="header">
+		<img id="head-image" src="images/toplogo.png" id="toplogo">
+		<div id="allmap"></div>
+		<div id="block_list">
 			<ul>
-				<li><img class="list-image" src="images/toplogo.png" id="toplogo"></li>
-				<li><img class="list-image" src="images/t1.png" onclick="showInfoList(this, 'xueyuan', '学院设置')"></li>
-				<li><img class="list-image" src="images/t2.png" onclick="showInfoList(this, 'chanxue', '产学研究')"></li>
-				<li><img class="list-image" src="images/t4.png" onclick="showInfoList(this, 'gongyu' , '学生公寓')"></li>
-				<li><img class="list-image" src="images/t6.png" onclick="showInfoList(this, 'qita'   , '其它建筑')"></li>
-				<li><img class="list-image" src="images/t7.png" onclick="showInfoList(this, 'road'   , '路线导航')"></li>
+				<li class="block0"><img class="list-image1" src="images/t1.png" onclick="showInfoList(this, 'xueyuan', '学院设置')"></li>
+				<li class="block0"><img class="list-image1" src="images/t2.png" onclick="showInfoList(this, 'chanxue', '产学研究')"></li>
+				<li class="block0"><img class="list-image1" src="images/t4.png" onclick="showInfoList(this, 'gongyu' , '学生公寓')"></li>
+				<li class="block0"><img class="list-image1" src="images/t6.png" onclick="showInfoList(this, 'qita'   , '其它建筑')"></li>
+				<li class="block0"><img class="list-image1" src="images/t7.png" onclick="showInfoList(this, 'road'   , '路线导航')"></li>
+			</ul>
+		</div>
+		<div id="aside">
+			<ul>
 				<li><img class="list-image" src="images/pm.png" onclick="setMapTypeNormal()"></li>
 				<li><img class="list-image" src="images/wx.png" onclick="setMapTypeHybrid()"></li>
 				<li><img class="list-image" src="images/hp.png" onclick="windowsOpenAHtml()"></li>
-				<li><img class="list-image" src="images/t8.png" onclick="showInfoList(this, 'theme'  , '选择主题')"></li>
+				<li><img class="list-image" src="images/t8.png" onclick="showThemeList(this, 'theme'  , '主题选择')"></li>
 			</ul>
 		</div>
-		<div id="allmap"></div>
 		<!---------------------------------分-------------------割---------------------线------------------------------------------>
 		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=mFWoCt6MpcsF9uhfig1WH3KHWDhRQnun"></script>
 		<script type="text/javascript" src="http://api.map.baidu.com/library/AreaRestriction/1.2/src/AreaRestriction_min.js"></script>
