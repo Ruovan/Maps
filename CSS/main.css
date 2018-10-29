@@ -4,28 +4,46 @@
 .anchorBL {
 	display: none;
 }
-body, html,#allmap {
+html{
 	width: 100%;
 	height: 100%;
 }
 body{
-	background-color: rgb(89,154,177);
-}
-#header{
 	width:100%;
-	background-color: rgb(89,154,177);
-	font-size:100%;
-	font-family: "fant name", Verdana, Geneva, Arical, sans-serif;
-	margin-top:-2%;
+	height:100%;
+}
+#head-image{
+	position:absolute;
+	top:1%;
+	left:1%;
+	width:20%;
+	z-index:99;
+	color:red;
 }
 #allmap{
-	height:90%;
+	height:100%;
 	width:100%;
 	margin-top:0%;
+}
+#block_list{
+	position:absolute;
+	top:80%;
+	left:35%;
+	width:50%;
+}
+#aside{
+	position:absolute;
+	top:25%;
+	right:0%;
+	padding-right:2%;
 }
 .list-image,.stylelist{
 	width:4%;
 	height:4%;
+}
+.list-image{
+	width:100%;
+	height:100%;
 }
 #toplogo{
 	width:25%;
@@ -34,9 +52,11 @@ body{
 }
 li{
 	list-style-type:none; 
-	display:inline;
 	margin:0;
 	padding:0;
+}
+.block0{
+		display:inline;
 }
 .button-image{
 	width:100%;
@@ -44,7 +64,7 @@ li{
 	margin-top:18%;
 	color:white;
 	font-size:120%;
-	background-color:blue;
+	background-color:black;
 }
 select{
 	width:126%;
@@ -54,17 +74,18 @@ select{
 	background-color: transparent;
  	-webkit-appearance: initial;
 	font-size:100%;
-	color:white;
+	color:black;
 	padding-left:10%;
 }
 .info_list {
 	position:absolute;
-	bottom:57%;
+	bottom:20%;
 	display:none;	
 	z-index:3;
 	margin:0 auto;
-	color:white;
-	background: rgb(89,154,177);
+	color:black;
+	font-weight: bold;
+	background:white;
 	border-radius:5%;
 	line-height:100%;
 	width:10%;
@@ -76,7 +97,7 @@ select{
 	height:50%; 
 	text-align:center; 
 	font-size:120%; 
-	color:yellow;	
+	color:black;	
 	line-height:10%; 
 	padding-left:5%;
 	padding-top:10%;
